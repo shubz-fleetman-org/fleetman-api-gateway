@@ -7,7 +7,7 @@ pipeline {
      // YOUR_DOCKERHUB_USERNAME (it doesn't matter if you don't have one)
 
      SERVICE_NAME = "fleetman-api-gateway"
-     REPOSITORY_TAG="richardchesterwood/k8s-fleetman-api-gateway:release2"
+     REPOSITORY_TAG="shubzz/${SERVICE_NAME}:release2"
    }
 
    stages {
