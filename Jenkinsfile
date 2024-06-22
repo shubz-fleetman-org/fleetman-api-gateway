@@ -17,12 +17,7 @@ pipeline {
             git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
          }
       }
-      stage('Build') {
-         steps {
-            sh '''cleaning '''
-         }
-      }
-
+     
 
       stage('Deploy to Cluster') {
           steps {
